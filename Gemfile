@@ -69,4 +69,4 @@ gem 'bootstrap', '~> 4.3.1'
 
 gem 'excon'
 
-
+gem 'devise'
