@@ -12,12 +12,12 @@ class TravelController < ApplicationController
 
   	@country = countries.first
   	@weather = find_weather(@country['capital'], @country['alpha2Code'])
-  	#puts @weather
+  	puts @weather
   end
 
   def find_weather(city, country_code)
     query = URI.encode("#{city},#{country_code}")
-    #puts query
+    puts query
     request_api(
       "https://community-open-weather-map.p.rapidapi.com/forecast?q=#{query}"
     )
